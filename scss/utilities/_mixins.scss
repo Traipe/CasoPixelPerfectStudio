@@ -1,0 +1,13 @@
+@mixin rounded($r) {
+  border-radius: $r;
+}
+
+@mixin elevation($level) {
+  box-shadow: $shadow;
+}
+
+@mixin respond($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

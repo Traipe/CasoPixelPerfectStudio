@@ -1,0 +1,42 @@
+.card {
+  background: $color-bg;
+  @include rounded($radius);
+  @include elevation(1);
+  padding: 1.5rem;
+  max-width: 400px;
+  margin: 2rem auto;
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  &__description {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  &__button {
+    background: $color-primary;
+    color: #fff;
+    border: none;
+    @include rounded(6px);
+    font-weight: bold;
+
+    &:hover {
+      background: darken($color-primary, 10%);
+    }
+
+// Borra esta línea porque es una regla vacia pero capaz la ocupas más adelante así que mejor comentada xd
+// &--primary {}
+  }
+
+  &--dark {
+    background: #1f2937;
+    color: #e5e7eb;
+
+    .card__button {
+      background: #10b981;
+    }
+  }
+}
