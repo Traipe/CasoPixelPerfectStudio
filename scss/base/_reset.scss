@@ -1,9 +1,15 @@
-body {
-  font-family: 'Poppins', sans-serif; // Sugerencia: una fuente más moderna
-  background-color: $color-bg-site;
-  color: $color-text-main;
-  line-height: 1.6;
+@use '../abstracts/variables' as v;
 
-  // Fondo Pattern sutil (Diseño UI/UX)
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGNDNGNUUiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDIwaDIwdjIwSDIWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: v.$color-bg-site;
+  color: v.$color-text-main;
+  
+  // Tu nuevo patrón
+  background-image: url('../assets/pattern-pss.png');
+  background-repeat: repeat;
+  background-size: 200px; // Ajusta este tamaño según cómo quieras que se vea el patrón
+  background-attachment: fixed; // Para que el fondo no se mueva al hacer scroll
 }
