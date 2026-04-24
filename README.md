@@ -63,5 +63,5 @@ Asegurarse de tener Live Sass Compiler configurado (Autoprefixer activado).
 El compilador generará automáticamente el archivo styles.css al guardar main.scss.
 
 👷 Proyecto en proceso...
-Desarrollado por Jimena Traipe
+Desarrollado por Jimena Traipe.
 
