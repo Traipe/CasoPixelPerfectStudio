@@ -1,0 +1,35 @@
+// scss/layouts/_footer.scss
+@use '../abstracts/variables' as v;
+
+.footer {
+  background-color: v.$color-dark; // Fondo oscuro para contraste
+  color: v.$color-text-light;
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+
+&__logo-img {
+    width: 60px;     // O el tamaño que prefieras
+    height: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 5px v.$color-primary); // Opcional: Un brillo sutil para que combine con el link
+  }
+}
+
+  &__link-neon {
+    color: v.$color-secondary;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+
+    // Efecto Neón Rosa
+    &:hover {
+      color: v.$color-white;
+      background-color: v.$color-primary;
+      box-shadow: 0 0 10px v.$color-primary, 
+                  0 0 20px v.$color-primary, 
+                  0 0 30px v.$color-secondary;
+    }
+  }

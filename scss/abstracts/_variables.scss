@@ -1,12 +1,15 @@
-// Brand Colors
-$color-primary: #3498db;   // Celeste
-$color-secondary: #10b981; // Verde
+// New Pink/Dark Palette
+$color-primary: #F43F5E;    // Rosa Fuerte (Botones, Títulos principales)
+$color-secondary: #F871A1;  // Rosa Claro (Hovers, detalles)
+$color-dark: #1F2937;       // Gris Muy Oscuro (Texto principal, fondos dark)
+$color-light-pink: #FEE2E2; // Rosa Muy Pálido (Fondo de tarjetas ligeras)
 $color-white: #ffffff;
 
-// UI Elements
-$color-bg: $color-white;
-$color-text: #333333;
+// UI Semantics
+$color-text-main: $color-dark;
+$color-text-light: $color-white;
+$color-bg-site: $color-light-pink; // Fondo suave para el sitio
 
-// Assets
+// Assets (Mantenemos los que ya teníamos)
 $radius: 12px;
-$shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+$shadow: 0 4px 14px rgba(0, 0, 0, 0.08); // Sombra más suave para esta paleta

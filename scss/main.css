@@ -1,0 +1,56 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FEE2E2;
+  color: #1F2937;
+  line-height: 1.6;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGNDNGNUUiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDIwaDIwdjIwSDIWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=");
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.col {
+  flex: 1 1 100%;
+}
+@media (min-width: 768px) {
+  .col {
+    flex: 0 1 calc(50% - 1.5rem);
+  }
+}
+@media (min-width: 1024px) {
+  .col {
+    flex: 0 1 calc(33.333% - 1.5rem);
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid rgba(244, 63, 94, 0.1);
+}
+.card__title {
+  color: #F43F5E;
+}
+.card__description {
+  color: #1F2937;
+}
+
+.btn--primary {
+  background-color: #F43F5E;
+  color: #ffffff;
+}
+.btn--primary:hover {
+  background-color: #F871A1;
+  transform: translateY(-2px);
+}/*# sourceMappingURL=main.css.map */

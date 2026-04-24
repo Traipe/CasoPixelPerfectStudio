@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripción - PixelPerfect Studio</title>
+  <link rel="stylesheet" href="styles.css"> </head>
+<body>
+
+<main class="container">
+  <section class="card form-card">
+    <a href="index.html" class="back-link">← Volver</a>
+    <h1 class="card__title">Formulario de Inscripción</h1>
+    <p class="card__description">Completa tus datos para reservar tu cupo.</p>
+
+    <form action="#" method="post" class="main-form">
+      <div class="form-group">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="comentario">Comentario (max 80 palabras):</label>
+        <textarea id="comentario" name="comentario" rows="5" maxlength="400" required></textarea>
+        <small class="help-text">Aproximadamente 400 caracteres.</small>
+      </div>
+
+      <button type="submit" class="btn btn--primary">Enviar Inscripción</button>
+    </form>
+  </section>
+</main>
+
+</body>
+</html>

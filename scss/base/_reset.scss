@@ -1,41 +1,9 @@
-/* Reset básico para asegurar consistencia entre navegadores
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 100%; /* 16px por defecto 
-}
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  background-color: $color-bg;
-  color: #333;
+  font-family: 'Poppins', sans-serif; // Sugerencia: una fuente más moderna
+  background-color: $color-bg-site;
+  color: $color-text-main;
+  line-height: 1.6;
+
+  // Fondo Pattern sutil (Diseño UI/UX)
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGNDNGNUUiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDIwaDIwdjIwSDIWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=');
 }
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-} 
-
-****///////

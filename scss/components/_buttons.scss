@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as v;
+
+.btn {
+  &--primary {
+    background-color: v.$color-primary;
+    color: v.$color-white;
+
+    &:hover {
+      background-color: v.$color-secondary; // Rosa más claro al hover
+      transform: translateY(-2px); // Efecto sutil
+    }
+  }
+}
