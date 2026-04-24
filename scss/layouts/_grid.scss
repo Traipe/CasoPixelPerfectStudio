@@ -1,0 +1,29 @@
+@use '../abstracts/mixins' as m;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; // Permite que las tarjetas bajen si no caben
+  gap: 1.5rem;      // Espacio entre tarjetas
+  justify-content: center; // Centra las tarjetas
+  padding: 2rem 0;
+}
+
+// Opcional: Una clase para columnas responsivas
+.col {
+  flex: 1 1 100%; // En móvil ocupa todo el ancho
+
+  @include m.respond-to("tablet") {
+    flex: 0 1 calc(50% - 1.5rem); // En tablet 2 por fila
+  }
+
+  @include m.respond-to("desktop") {
+    flex: 0 1 calc(33.333% - 1.5rem); // En desktop 3 por fila
+  }
+}
