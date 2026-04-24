@@ -40,3 +40,20 @@
     }
   }
 }
+
+@use '../abstracts/mixins' as m;
+
+.card {
+  width: 90%; // Por defecto en móvil es casi todo el ancho
+  margin: 1rem auto;
+  
+  // Usamos el mixin para tablets y desktops
+  @include m.respond-to("tablet") {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  @include m.respond-to("desktop") {
+    max-width: 400px; // En pantallas grandes lo limitamos
+  }
+}

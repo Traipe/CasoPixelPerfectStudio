@@ -1,5 +1,13 @@
-@import "utilities/variables";
-@import "utilities/mixins";
+// 1. Abstracts (Configuraciones)
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// 2. Base (Reset)
 @import "base/reset";
+
+// 3. Layout
 @import "layout/grid";
+
+// 4. Components (Piezas visuales)
 @import "components/card";
+@import "components/buttons"; // No olvides crear este para los botones

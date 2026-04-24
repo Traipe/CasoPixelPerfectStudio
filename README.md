@@ -4,57 +4,64 @@
 ---
 
 ## 📌 Descripción
-Este proyecto corresponde al análisis y práctica del caso **PixelPerfect Studio**, donde se aplican metodologías de organización y modularización de estilos (BEM + SMACSS) para lograr un código CSS escalable, mantenible y colaborativo.
+Este proyecto aplica metodologías de organización y modularización de estilos (**BEM + SMACSS**) para lograr un código CSS escalable, mantenible y colaborativo en el desarrollo de interfaces modernas.
 
 ---
 
-## 🎨 Branding
-- **Paleta:** Celeste (#3498db), Verde (#10b981), Blanco (#ffffff).
-- **Estilo:** Interfaces limpias, con bordes redondeados y sombras suaves.
-- **Tipografía:** Jerarquía clara entre títulos, descripciones y botones.
+## 🎨 Branding & Design System
+- **Paleta:** Celeste (`#3498db`), Verde (`#10b981`), Blanco (`#ffffff`).
+- **Estilo:** Interfaces limpias, bordes redondeados y sombras suaves.
+
+### Componentes Principales:
+* **Card:** Pieza central para información jerarquizada.
+    * *Path:* `scss/components/_card.scss` | *Selector:* `.card` | *Variante:* `.card--dark`.
+* **Button:** Elemento de acción atómico y reutilizable.
+    * *Path:* `scss/components/_buttons.scss` | *Selector:* `.btn` | *Variantes:* `--primary`, `--success`.
 
 ---
 
 ## 📂 Estructura de carpetas
+Se utiliza una arquitectura inspirada en SMACSS para separar responsabilidades:
 
+```text
 scss/ 
-    ├── base/_reset.scss 
-    ├── layout/_grid.scss 
-    ├── components/_card.scss 
-    ├── utilities/_variables.scss 
-                /_mixins.scss 
-    └── main.scss 
-index.html
+ ├── abstracts/    <-- Variables y Mixins (No generan CSS)
+ │    ├── _variables.scss 
+ │    └── _mixins.scss 
+ ├── base/         <-- Reset y estilos globales
+ │    └── _reset.scss 
+ ├── layout/       <-- Estructuras de página
+ │    └── _grid.scss 
+ ├── components/   <-- Bloques reutilizables (BEM)
+ │    ├── _card.scss
+ │    └── _buttons.scss
+ └── main.scss     <-- Punto de entrada de compilación
 
+ 🚀 Retos Técnicos y Aprendizajes
+Durante el desarrollo de PixelPerfect Studio, el principal desafío fue transicionar de un CSS monolítico a una arquitectura modular basada en SMACSS.
 
----
+La solución: Implementé la metodología BEM para evitar la colisión de estilos y garantizar que los componentes sean "atómicos". Esto significa que un botón no depende de estar dentro de una tarjeta para funcionar, reduciendo la deuda técnica y facilitando el trabajo en equipo.
 
-## 🧩 Convenciones BEM
-- **Bloque:** `.card`
-- **Elemento:** `.card__title`, `.card__description`, `.card__button`
-- **Modificador:** `.card--dark`, `.card__button--primary`
+✅ Checklist de buenas prácticas
+[x] Naming BEM consistente.
 
----
+[x] Variables globales en abstracts/_variables.scss.
 
-## ✅ Checklist de buenas prácticas
-- [ ] Usar nombres de clase BEM consistentes.  
-- [ ] Definir variables globales en `utilities/_variables.scss`.  
-- [ ] Reutilizar mixins para bordes, sombras y media queries.  
-- [ ] Evitar reglas vacías y duplicadas.  
-- [ ] Documentar cada componente en su archivo SCSS.  
-- [ ] Verificar responsive y accesibilidad básica.  
+[x] Mixins reutilizables para responsive y efectos.
 
----
+[x] Código limpio (sin reglas vacías).
 
-## 🚀 Cómo ejecutar
-1. Instalar **Live Sass Compiler** en VS Code.  
-2. Compilar `main.scss` → genera `styles.css`.  
-3. Instalar **Live Server** en VS Code.  
-4. Abrir `index.html` y visualizar el componente.  
+[x] Accesibilidad básica (Aria-labels y semántica).
 
----
+🛠️ Cómo ejecutar
+Clonar el repositorio.
 
-## ✨ Reflexión
-Este enfoque permite mantener estilos organizados, escalables y fáciles de colaborar en equipos grandes, evitando conflictos y mejorando la productividad.
+Abrir con VS Code.
 
-##Proyecto en proceso *
+Asegurarse de tener Live Sass Compiler configurado (Autoprefixer activado).
+
+El compilador generará automáticamente el archivo styles.css al guardar main.scss.
+
+👷 Proyecto en proceso...
+Desarrollado por Jimena Traipe
+
